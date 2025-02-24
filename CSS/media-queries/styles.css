@@ -1,0 +1,16 @@
+body {
+  background-color: peru;
+  color: white;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+    color: black;
+  }
+}
