@@ -1,0 +1,62 @@
+form {
+  max-width: 300px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+input:invalid {
+  animation: shake 0.4s;
+  border-color: red;
+}
+
+input:focus:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: #28a745;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-10px);
+  }
+  40%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

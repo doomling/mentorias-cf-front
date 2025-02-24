@@ -1,0 +1,45 @@
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+}
+
+.box1:hover {
+  animation: entrance 2s ease 0s 1 normal forwards;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+}
+
+.box2:hover {
+  animation: colorChange 2s ease 0s infinite;
+  transform: scale(1.1);
+  transition: 2s ease-in;
+}
+
+@keyframes entrance {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: blue;
+  }
+
+  50% {
+    background-color: red;
+  }
+
+  100% {
+    background-color: greenyellow;
+  }
+}
